@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Font Randomizer</title>
+  <link href="paper.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      max-width: 31em;
+      margin: 0 auto;
+      padding: 0 1em 1em 1em;
+    }
+
+    span {
+      display: inline-block;
+      padding: 2px;
+      color: #000;
+      text-shadow: 1px 1px 5px #fff;
+    }
+
+    h1#out {
+      width: 100%;
+      text-align: center;
+      min-height: 3em;
+    }
+
+    a.blend {
+      font-family: 'Patrick Hand SC', sans-serif;
+      font-weight: 400;
+      color: #41403e;
+      background-image: none;
+    }
+
+    input#in {
+      width: 25em;
+    }
+
+    @media screen and (max-width: 40em) {
+      input#in {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1><a href="https://github.com/mrdnomaid/fontrandomizer" rel="nofollow noreferrer" class="blend">Font Randomizer</a></h1>
+
+  <hr>
+
+  <fieldset class="form-group">
+    <legend>New Font:</legend>
+
+    <label for="word" class="paper-radio">
+      <input type="radio" name="what" id="word"> <span>Every Word<span>
+    </label>
+
+    <label for="letter" class="paper-radio">
+      <input type="radio" name="what" id="letter" checked> <span>Every Letter<span>
+    </label>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <legend>Background Colours?</legend>
+
+    <label for="colsyes" class="paper-radio">
+      <input type="radio" name="cols" id="colsyes"> <span>Yes<span>
+    </label>
+
+    <label for="colsno" class="paper-radio">
+      <input type="radio" name="cols" id="colsno" checked> <span>No<span>
+    </label>
+  </fieldset>
+
+  <div class="form-group">
+    <label>What'd you want it to say?</label>
+    <input type="text" value="Your Text Here" id="in" onkeypress="if (event.keyCode == 13) { doTheThing(); return false; }">
+  </div>
+
+  <div class="form-group">
+    <button type="button" onclick="doTheThing();">Go</button>
+  </div>
+
+  <hr>
+
+  <h1 id="out"></h1>
+
+  <hr>
+  <p>A <a href="https://dnomaid.co.uk">dnomaid</a> thing. Uses <a href="https://www.getpapercss.com/" target="_blank" rel="nofollow noreferrer">PaperCSS</a>.</p>
+
+  <script src="fr.js"></script>
+</body>
+
+</html>
