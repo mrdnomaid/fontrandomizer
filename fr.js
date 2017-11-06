@@ -1,4 +1,4 @@
-fstr = 'Arial, Helvetica, Arial Black, Gadget, Comic Sans MS, Papyrus, Courier New, Georgia, Times New Roman, Times, Impact, Charcoal, Lucida Console, Monaco, Lucida Sans Unicode, Lucida Grande, Palatino Linotype, Book Antiqua, Palatino, Tahoma, Geneva, Times New Roman, Times,Trebuchet MS, Helvetica, Verdana';
+fstr = 'Arial Black, Comic Sans MS, Papyrus, Courier New, Georgia, Times New Roman, Impact, Lucida Console, Lucida Sans Unicode, Lucida Grande, Tahoma, Trebuchet MS, Helvetica, Neucha, Patrick Hand SC';
 f = fstr.split(', ');
 w = document.getElementById('word');
 l = document.getElementById('letter');
