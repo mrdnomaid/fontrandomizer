@@ -31,11 +31,21 @@ function doTheThing() {
 
   if (w.checked) {
     for (var i = 0; i < wrds.length; i++) {
-      append(ret(wrds[i]));
+      rn = Math.floor(Math.random() * 5) + 1;
+      if (rn == 3) {
+        append(ret(wrds[i].toUpperCase()));
+      } else {
+        append(ret(wrds[i]));
+      }
     }
   } else if (l.checked) {
     for (var i = 0; i < t.length; i++) {
-      append(ret(t[i]));
+      rn = Math.floor(Math.random() * 5) + 1;
+      if (rn == 3) {
+        append(ret(t[i].toUpperCase()));
+      } else {
+        append(ret(t[i]));
+      }
     }
   }
 }
