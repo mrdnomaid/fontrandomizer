@@ -1,2 +1,2 @@
 # fontrandomizer
-Make some text made up of random fonts
+Make some text look stupid.
